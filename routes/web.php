@@ -54,6 +54,7 @@ Route::post('admin/settings/quick', 'SettingsController@store_quick');
 Route::put('admin/settings/{id}', 'SettingsController@update')->where('id', '[0-9]+');
 Route::put('admin/settings/quick/{id}', 'SettingsController@update_quick')->where('id', '[0-9]+');
 
+Route::post('logout', 'LoginController@logout')->name('logout');
 });
 
 Auth::routes();

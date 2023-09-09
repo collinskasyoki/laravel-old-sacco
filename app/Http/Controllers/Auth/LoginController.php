@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Events\UserLoggedOut;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 
@@ -36,5 +37,15 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function logout(Request $request) 
+    {
+        exec("bash /usr/src/app/copy.sh > /dev/null 2>&1 &");
+        
+        $this->guard()->logout();
+        $request->session()->invalidate();
+
+        return redirect('/login');
     }
 }
