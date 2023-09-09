@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-<!-- Mirrored from demos.creative-tim.com/material-dashboard-pro/examples/pages/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Mar 2017 21:32:19 GMT -->
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -49,7 +47,6 @@
     </nav>
     <div class="wrapper wrapper-full-page">
         <div class="full-page login-page" filter-color="black">
-            <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
             <div class="content">
                 <div class="container">
                 @yield('content')

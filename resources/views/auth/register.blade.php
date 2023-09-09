@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="card-content">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal">
                         {{ csrf_field() }}
 
                       <div class="col-md-6">
@@ -105,7 +105,7 @@
 
                         <div class="">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg">
+                                <button class="btn btn-rose btn-simple btn-wd btn-lg">
                                     Register
                                 </button>
                             </div>
