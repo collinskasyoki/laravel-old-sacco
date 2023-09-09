@@ -9,7 +9,8 @@
                                 <div class="card card-login">
                                     <div class="card-header text-center" data-background-color="rose">
                                         <h4 class="card-title">Demo Account Login</h4>
-                                        <h5>ID: 1000000, Password: demo1234</h5>
+                                        <h5>ID: 1000000</h5>
+                                        <h5>Password: demo1234</h5>
                                     </div>
                                     <div class="card-content">
                                         <div class="input-group">

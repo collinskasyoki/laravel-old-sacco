@@ -36,12 +36,13 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        exec("bash /usr/src/app/copy.sh > /dev/null 2>&1 &");
         $this->middleware('guest')->except('logout');
     }
 
     public function logout(Request $request) 
     {
-        exec("bash /usr/src/app/copy.sh > /dev/null 2>&1 &");
+        // exec("bash /usr/src/app/copy.sh > /dev/null 2>&1 &");
         
         $this->guard()->logout();
         $request->session()->invalidate();
