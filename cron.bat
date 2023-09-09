@@ -1,1 +1,0 @@
-c:\xampp\php\php.exe d:\sacco\artisan schedule:run 1>> NUL 2>&1
